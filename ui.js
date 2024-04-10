@@ -7,7 +7,7 @@ export function displayWeatherInfo(weatherData) {
             <p>Humidity: ${weatherData.humidity}%</p>
             <p>Wind Speed: ${weatherData.windSpeed} m/s</p>
             <p>Description: ${weatherData.description}</p>
-        `;
+        `; 
     } else {
         weatherInfoDiv.innerHTML = '<p>No weather data found. Please try again.</p>';
     }
