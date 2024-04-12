@@ -1,49 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f3f5;
 }
 
 .header {
-    padding: 20px;
-    background-color: #f8f9fa;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    background-color: #3498db;
+    color: white;
 }
 
 .header__title {
-    color: #343a40;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .search-bar {
     max-width: 600px;
-    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
 }
 
 .search-bar__input {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #dddfe2;
-    border-radius: 5px;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
     color: #343a40;
+    width: 90%;
+    margin-bottom: 1rem;
 }
 
 .search-bar__btn {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 1rem;
     border: none;
-    background-color: #3498db;
-    color: white;
+    background-color: white;
+    color: #3498db;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out; /* Add a subtle animation effect */
+}
+
+.search-bar__btn:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05); /* Slightly increase the size on hover */
 }
 
 .content {
-    max-width: 1024px;
+    max-width: 1200px;
+    padding: 1rem;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .weather-info__title {
     color: #3498db;
+    font-size: 1.5rem;
 }
