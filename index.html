@@ -6,13 +6,18 @@
     <title>Farouk's Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Weather By Farouk</h1>
-        <input type="text" id="searchInput" placeholder="Enter city name...">
-        <button id="searchBtn">Search</button>
+<body class="body">
+    <header class="header">
+        <h1 class="header__title">Weather By Farouk</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter city name..." class="search-bar__input">
+            <button id="searchBtn" class="search-bar__btn">Search</button>
+        </div>
     </header>
+    
+    <main class="content">
     <div id="weatherInfo"></div>
+    </main>
 
     <script src="script.js" type="module"></script>
 </body>
