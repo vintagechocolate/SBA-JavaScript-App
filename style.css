@@ -1,39 +1,49 @@
-/* Your CSS styles go here */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-header {
+.header {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.header__title {
+    color: #343a40;
+}
+
+.search-bar {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.search-bar__input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    color: #343a40;
+}
+
+.search-bar__btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
     background-color: #3498db;
     color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-input[type="text"] {
-    padding: 8px;
-    margin-right: 10px;
-}
-
-button {
-    padding: 8px 15px;
-    background-color: #2980b9;
-    color: white;
-    border: none;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #1f6698;
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-#weatherInfo {
-    margin-top: 20px;
-    text-align: center;
+.weather-info__title {
+    color: #3498db;
 }
